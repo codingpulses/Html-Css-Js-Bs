@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>js-operators</title>
+</head>
+<style>
+    body{
+        color: darkblue;
+        background-color: black;
+        text-align: center;
+        border-style: double;
+        border-color: bisque;
+    }
+    .part01{
+        background-color:olive ;
+    }
+    .part02{
+        background-color: orangered;
+    }
+    h2{
+        color: aliceblue;
+    }
+    h3{
+        color: rgb(0, 0, 0);
+    }
+</style>
+<body>
+    <div class="part01">
+    <h2>Arthmetic Operators</h2>
+<h3>Number of week in a year.</h3>
+
+<p id="weeks"></p>
+<p id="days"></p>
+
+<script>
+let x = 365;
+let y = 7;
+let z = x / y;
+document.getElementById("weeks").innerHTML = z;
+
+let a = 365;
+let b = 7;
+let c = a % b;
+document.getElementById("days").innerHTML = c;
+</script>
+<h3>Total Week:52</h3>
+<h3>Total Day:1</h3>
+    </div>
+    <br>
+    <div class="part02">
+        <h2>String Concatenation</h2>
+
+<h2 id="con"></h2>
+
+<script>
+var text1="Hello Students"
+var text2="Good Morning"
+document.getElementById("con").innerHTML = text1 + text2;
+</script>
+
+</body>
+</html>
+    </div>
+
+</body>
+</html>

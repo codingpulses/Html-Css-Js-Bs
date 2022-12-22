@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<title>Unit Converter</title>
+<style>
+    body{
+        background-color: black;
+    }
+    h2,h5{
+        color: aliceblue;
+    }
+    p{
+        color: aqua;
+    }
+    li{
+        color: red;
+    }
+</style>
+<body>
+
+<h2><b>Unit Converter</b></h2>
+<h5><b>Please Note:</b></h5>
+<li>Type a value in the Feet field to convert the value to cm:</li>
+<li>Please Enter the valu greater than Zero.</li>
+<li>Please enter numeric value to get accurate results.</li>
+<p>
+  <label>Feet</label>
+  <input id="inputFeet" type="number" placeholder="Feet" oninput="LengthConverter(this.value)" onchange="LengthConverter(this.value)">
+</p>
+<p>cm: <span id="outputcm"></span></p>
+
+<script>
+function LengthConverter(valNum) {
+  document.getElementById("outputcm").innerHTML=valNum/0.032808;
+}
+</script>
+</body>
+</html>

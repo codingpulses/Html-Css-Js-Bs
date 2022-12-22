@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            background-color: black;
+            color: coral;
+        }
+    </style>
+<body>
+
+<center><h2>ES6 Assignment</h2></center>
+
+<b><p>How to use ES6 in Javascript.</p></b>
+
+<p id="car"></p>
+
+<script>
+class Car {
+  constructor(name) {
+    this.name = name;
+  }
+}
+
+const myCar = new Car("I have a Ford, it is Mustang");
+document.getElementById("car").innerHTML =
+myCar.name + " " ;
+</script>
+
+</body>
+</html>

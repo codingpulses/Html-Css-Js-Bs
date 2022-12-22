@@ -1,0 +1,13 @@
+.container{
+    padding: 20px 15px;
+    background-color: aqua;
+    border: solid 1px lightcoral;
+}
+
+.grid-item-1{
+    background-color: aliceblue;
+    color: red;
+    display: grid;
+    grid-template-columns: minmax(100px);
+    backface-visibility: hidden;
+}

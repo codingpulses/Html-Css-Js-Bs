@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>JS-AJAX</title>
+</head>
+<style>
+    body{
+        background-image: url(https://cdn.dribbble.com/users/662779/screenshots/5122311/server.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    h2,p{
+        color: aliceblue;
+    }
+    #showCD{
+        color: rgb(164, 166, 166);
+        background-color: black;
+        border-style: double;
+        border-width: 10px;
+        border-color: red;
+    }
+</style>
+<body>
+    <center>
+        <h2>Navigate between the CD's in Ajax</h2>
+    <p>This example shows how user can navigate between multiple CD's using Ajax. Here we use an Xml file to display the content in the file.Use the buttons to navigate easilly between CD's</p>
+   
+    <br>
+    <div id='showCD'></div><br>
+    <div class="bb">
+<input type="button" onclick="previous()" value="Previous">
+<input type="button" onclick="next()" value="Next">
+    </div>
+    </center>
+
+<script>
+var i = 0;
+var x;
+displayCD(i);
+
+function displayCD(i) {
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            myFunction(this, i);
+        }
+    };
+    xmlhttp.open("GET", "JS-AJAX.xml", true);
+    xmlhttp.send();
+}
+
+function myFunction(xml, i) {
+    var xmlDoc = xml.responseXML; 
+    x = xmlDoc.getElementsByTagName("CD");
+    document.getElementById("showCD").innerHTML =
+    "Artist: " +
+    x[i].getElementsByTagName("ARTIST")[0].childNodes[0].nodeValue +
+    "<br>Title: " +
+    x[i].getElementsByTagName("TITLE")[0].childNodes[0].nodeValue +
+    "<br>Year: " + 
+    x[i].getElementsByTagName("YEAR")[0].childNodes[0].nodeValue;
+}
+
+function next() {
+if (i < x.length-1) {
+  i++;
+  displayCD(i);
+  }
+}
+
+function previous() {
+if (i > 0) {
+  i--;
+  displayCD(i);
+  }
+}
+</script>
+
+</body>
+</html>

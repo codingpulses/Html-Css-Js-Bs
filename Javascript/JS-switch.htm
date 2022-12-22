@@ -1,0 +1,24 @@
+<html>
+<body>
+
+<h2>You are going to the trip</h2>
+
+<p id="trip"></p>
+
+<script>
+let text ;
+switch (new Date().getDay()) {
+  default:
+    text = "You have tourist visa Enjoy your Paris trip";
+    break;
+  case 1:
+    text = "You have tourist visa Enjoy your new york trip";
+    break;
+  case 2:
+    text = "You have tourist visa Enjoy your dubai trip";
+}
+document.getElementById("trip").innerHTML = text;
+</script>
+
+</body>
+</html>

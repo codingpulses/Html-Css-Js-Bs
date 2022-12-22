@@ -1,0 +1,30 @@
+body{
+    background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm373batch15-bg-11.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=f8e17abb22adb3b3261d9076259e3e0e');
+    background-attachment: scroll;
+    border-color:rgb(255, 255, 255);
+    border-style:dashed;
+}
+h2{
+    color: yellow;
+    background-color: blue;
+}
+
+p{
+    opacity:0.5;
+}
+
+.container{
+    background-color: rgb(196, 47, 255);
+    width: 600px;
+    height: 600px;
+    background-attachment: scroll;
+}
+h2{
+    color:rgb(250, 0, 0) ;
+    background-color: yellow ;
+    border-radius: 10px;
+    border-color: brown;
+    text-align:center;
+    border-style: groove;
+    border-color:blue
+}

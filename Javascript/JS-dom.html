@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<style>
+    body{
+        background-image: url(https://cdn.dribbble.com/users/1770290/screenshots/6238146/bg_87.gif);
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+    #demo{
+        background-color: rgb(255, 255, 255);
+        color:rgb(0, 0, 0);
+        border: 15px;
+        width: 1000px;
+        font-size: 52px;
+        border-style: solid;
+        height: 150px;
+        position: relative;
+    }
+    h1{
+        color: blanchedalmond;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        
+    }
+    .wr{
+        background-color: black;
+        color: blanchedalmond;
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="wr">
+    <h1>Java Script addeventListener</h1>
+    <p>This example uses the addeventListener() method to add various event to the same button.</p>
+    </div>
+    <h4>Instructions for accurate results.</h4>
+        <li>Move the mouse inside the page for "Moused over"</li>
+        <li>Click any where on the screen for  for "Clicked!"</li>
+        <li>Move the mouse outside the page for "Moused out"</li>
+        <br>
+    <button id="demo" center></button>
+<script>
+   document.addEventListener("mouseover", myFunction);
+document.addEventListener("click", mySecondFunction);
+document.addEventListener("mouseout", myThirdFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Moused over!"
+}
+
+function mySecondFunction() {
+  document.getElementById("demo").innerHTML = "Clicked!<br>"
+}
+
+function myThirdFunction() {
+  document.getElementById("demo").innerHTML = "Moused out!<br>"
+}
+</script>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+</body>

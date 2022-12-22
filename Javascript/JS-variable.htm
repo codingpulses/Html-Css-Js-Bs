@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>js-variable</title>
+</head>
+<style>
+    body{
+        border-style: double;
+        border-radius: 15 px;
+        color: aqua;
+        background-color: black;
+        padding: 20 px;
+        margin: 20 px;
+    }
+</style>
+<body>
+    <h2>Redeclaring a Variable Using let</h2>
+    <script>
+        var x ='Hello';
+        {
+        var x ='Hello JS';
+        }
+        document.write(x);
+
+        </script>
+        <hr>
+        <h2>JavaScript const</h2>
+<p id="js"></p>
+<p id="js1"></p>
+<script>
+const phones =["Iphone","Redmi","Oppo"];
+document.getElementById("js").innerHTML = phones;
+phones[0] ="Motto";
+phones.push("Oneplus");document.getElementById("js1").innerHTML = phones;
+</script>
+
+    </body>
+    </html>

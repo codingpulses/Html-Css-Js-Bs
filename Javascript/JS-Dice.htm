@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rolling Dice</title>
+
+<style>
+    body{
+        background-image: url(https://store-images.s-microsoft.com/image/apps.8463.9007199266358378.eb583b33-e4fa-4a8b-bac5-6bd2d43856d9.c3deb9f6-9756-44c8-af61-52bba8abfe36?w=672&h=378&q=80&mode=letterbox&background=%23FFE4E4E4&format=jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-style: double;
+        border-width: 20px;
+        align-items: center;
+    }
+
+button {
+    width: 350px;
+    background-color: black;
+    font-size: larger;
+    color: aliceblue;
+}
+h2{
+    margin:50px;
+    color: black;
+}
+
+</style>
+
+</head>
+<body>
+<center><h1>Roll the Dice.</h1></center>
+    <button class="roller" onclick="counter=20;rollTheDice()">Roll</button>
+    <h3>Yay!!! you got:-</h3>
+    <h2 class="number">0</h2>   
+</body>
+
+<script>
+function rollTheDice() {
+    var x = Math.floor(Math.random() * 5) + 1 ;
+        document.querySelector(".number").innerHTML = x; 
+        if (--counter>0) setTimeout(rollTheDice, 100); 
+    }
+</script>
+
+</html>

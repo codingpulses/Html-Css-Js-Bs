@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>JS-async & await</title>
+</head>
+<style>
+  *{
+    background-color: black;
+    color: red;
+  }
+  h1{
+    color: green;
+  }
+</style>
+<body>
+    <center><h2>JavaScript async / await</h2></center>
+
+    <h1 id="demo"></h1>
+    
+    <script>
+    async function myDisplay() {
+      let myPromise = new Promise(function(resolve, reject) {
+        resolve("Success! No error found");
+        reject("error")
+      });
+      document.getElementById("demo").innerHTML = await myPromise;
+    }
+    
+    myDisplay();
+    </script>
+    
+    </body>
+    </html>
+    

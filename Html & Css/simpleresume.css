@@ -1,0 +1,30 @@
+BODY{
+    border-style: double;
+    border-radius: 10PX;
+    border-width: 10px;
+    background-color:orange;
+    padding: 20px 20px 20px 20px;
+}
+.CENTER{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100;
+}
+.about{
+    color:coral;
+}
+H2,H4{
+    text-align: center;
+    background-color: black;
+    color: rgb(199, 158, 107);
+}
+div{
+    background-color: rgb(199, 158, 107);
+}
+table{background-color:yellow;
+    margin-left: 0px;
+    margin-right: auto;
+    width: 100;
+    table-layout: inherit;
+}
